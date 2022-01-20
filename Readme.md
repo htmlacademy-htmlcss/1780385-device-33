@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Берестень](https://up.htmlacademy.ru/htmlcss/33/user/1780385).
-* Наставник: `Неизвестно`.
+* Наставник: [Борис Слонов](https://htmlacademy.ru/profile/slonov_boris).
 
 ---
 
