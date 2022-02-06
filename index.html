@@ -25,16 +25,16 @@
 
     <nav class="main-nav">
 
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="search_and_ul">
+       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="visually-hidden" for="search-text">Поиск по сайту</label>
         <input class="search-form__input" type="text" name="search-text" id="search-text" placeholder="Поиск по сайту" required>
         <button class="search-form__btn" type="submit">Найти</button>
-      </form>
+        <a class="user-nav__link_entry" href="#">Войти</a>
+       </form>
 
-      <ul class="main-nav__list user-nav">
-        <li class="user-nav__item user-nav__login">
-          <a class="user-nav__link" href="#">Войти</a>
-        </li>
+       <ul class="main-nav__list1 user-nav">
+
         <li class="user-nav__item user-nav__compare">
           <a class="user-nav__link" href="#">Сравнить</a>
         </li>
@@ -43,51 +43,29 @@
             <b class="cart-quantity">2</b>
             Корзина
           </a>
+          </li>
       </ul>
-          <!-- ПОКА НЕ ЗНАЮ КАК ДОБАВИТЬ ВСПЛЫВАЮЩУЮ КОРЗИНУ -->
+     </div>
+
 
 
 
           <!-- /Меню пользователя -->
 
           <!-- Главное меню -->
+
+          <div class="flex_container_catalogue">
+
           <ul class="main-nav__list basic-nav">
             <li class="basic-nav__item basic-nav__catalog">
               <a class="basic-nav__link catalog-link" href="catalog.html">
                 <b class="catalog-link__txt">Каталог товаров</b>
                 <span class="catalog-link__icon"></span>
               </a>
-
-              <!-- Выпадающее подменю -->
-
-              <div class="basic-nav__subcatalog subcatalog">
-                <ul class="subcatalog__list">
-                  <li class="subcatalog__item">
-                    <a class="subcatalog__link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="subcatalog__item">
-                    <a class="subcatalog__link" href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="subcatalog__item">
-                    <a class="subcatalog__link" href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="subcatalog__list">
-                  <li class="subcatalog__item">
-                    <a  class="subcatalog__link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="subcatalog__item">
-                    <a class="subcatalog__link" href="#">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="subcatalog__list">
-                  <li class="subcatalog__item">
-                    <a class="subcatalog__link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /Выпадающее подменю -->
             </li>
+          </ul>
+
+            <ul class="three_elements_basic">
             <li class="basic-nav__item">
               <a class="basic-nav__link" href="#">Доставка</a>
             </li>
@@ -98,6 +76,8 @@
               <a class="basic-nav__link" href="#">Контакты</a>
             </li>
           </ul>
+
+        </div>
           <!-- /Главное меню -->
         </nav>
 
@@ -106,8 +86,13 @@
 
   <!-- Содержимое сайта (начало) -->
 
+
+
   <main class="page-main main-container">
+
     <section class="slider container">
+
+      <div class="slider_box_group1">
       <h2 class="visually-hidden">Слайдер</h2>
 
       <ol class="slider__list">
@@ -116,6 +101,23 @@
           <article class="slider__item">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <img class="slider__img" src="img/content/slider-1.png" alt="Квадрокоптер с мощным лазером." width="" height="">
+
+            <!-- Кнопки влево-вправо -->
+      <div class="slider__nav">
+        <button class="slider__btn slider__btn-prev" type="button">
+          <span class="visually-hidden">Предыдущий товар</span>
+        </button>
+        <button class="slider__btn slider__btn-next" type="button">
+          <span class="visually-hidden">Следующий товар</span>
+        </button>
+      </div>
+
+      <span>01</span>
+    </div>
+
+
+
+
             <div class="slider__descr">
               <p class="slider__lead">Порхает как бабочка,<br>жалит как пчела!</p>
               <p class="slider__txt">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -134,15 +136,7 @@
         </li>
       </ol>
 
-      <!-- Кнопки влево-вправо -->
-      <div class="slider__nav">
-        <button class="slider__btn slider__btn-prev" type="button">
-          <span class="visually-hidden">Предыдущий товар</span>
-        </button>
-        <button class="slider__btn slider__btn-next" type="button">
-          <span class="visually-hidden">Следующий товар</span>
-        </button>
-      </div>
+
 
       <!-- Кнопки пагинации -->
       <ol class="slider__pagination">
@@ -222,11 +216,15 @@
     </section>
 
     <!-- Блок с доставкой -->
+    <div class="deliv">
     <a class="delivery-btn container" href="#">
       Доставим редкий товар под заказ
       <span class="info-btn"></span>
     </a>
+  </div>
 
+
+   <div class="group_about-contacts">
     <!-- Ceкция 'О НАС' -->
     <div class="about container">
       <section class="about__block about__info">
@@ -263,6 +261,8 @@
       </section>
     </div>
 
+  </div>
+
     <!-- Блок подписки на рассылку -->
     <section class="subscribe">
 
@@ -282,12 +282,16 @@
 
     </section>
 
+
   </main>
+
   <!-- Содержимое сайта (конец) -->
 
   <!-- Подвал сайта (начало) -->
   <footer class="page-footer">
     <div class="container">
+
+      <div class="page_footer_device">
       <a class="page-footer__logo" href="index.html">
         <span class="visually-hidden">Логотип Девайс</span>
         <svg width="145" height="36" viewBox="0 0 145 36" role="img" aria-label="Логотип «Девайс»" xmlns="http://www.w3.org/2000/svg">
@@ -295,6 +299,10 @@
           <path d="M83.4 0v10.1L91 0h-7.6Z"/>
         </svg>
       </a>
+        <address class="page-footer__address">
+          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+
+    </div>
 
       <section class="page-footer__info">
         <h2 class="visually-hidden">Основная информация</h2>
@@ -313,8 +321,7 @@
 
       <section class="page-footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <address class="page-footer__address">
-          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+
           <a class="page-footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
       </section>
