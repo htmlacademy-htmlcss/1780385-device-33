@@ -1,0 +1,338 @@
+/* Fonts */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+}
+
+header {
+  outline: 2px red solid;
+}
+
+main {
+  outline: 2px rgb(0, 140, 255) solid;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(68, 68, 68, 1);
+  outline: 2px rgb(102, 255, 0) solid;
+}
+
+nav {
+  outline: 2px rgb(0, 255, 255) solid;
+}
+
+.slider {
+  outline: 2px rgb(247, 0, 255) solid;
+}
+
+.services {
+  outline: 2px rgb(36, 73, 31) solid;
+}
+.about {
+  outline: 2px rgb(161, 60, 148) solid;
+}
+
+/* Стики футер */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* Размечаю крупные блоки */
+
+main-nav {
+}
+.search_and_ul {
+  width: 1040px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  outline: 4px solid red;
+  margin: 0 auto;
+}
+
+.main-nav__list1 {
+  list-style: none;
+}
+
+.main-nav__list1 a {
+  text-decoration: none;
+}
+
+.main-nav__list1 li {
+  display: inline;
+}
+.user-nav__link_entry {
+  width: 231px;
+  height: 30px;
+  margin: 5px 26px 5px 26px;
+}
+
+.flex_container_catalogue {
+  width: 1040px;
+  height: 50px;
+  outline: 5px blue solid;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.basic-nav__item {
+  display: inline;
+  margin: 0 45px;
+}
+
+.slider_box_group1 {
+  width: 1111px;
+  height: 560px;
+  outline: 5px pink solid;
+  margin: 0 auto;
+}
+
+.categories {
+  width: 1160px;
+  height: 253px;
+  outline: 5px solid green;
+  margin: 0 auto;
+}
+
+.categories ul li {
+  display: inline-block;
+}
+
+.services {
+  width: 1440px;
+  height: 391px;
+  outline: 5px orange solid;
+  margin: 0 auto;
+}
+
+.deliv {
+  width: 1160px;
+  height: 100px;
+  outline: 5px solid khaki;
+  margin: 70px auto;
+}
+
+.group_about-contacts {
+  width: 1160px;
+  height: 545px;
+  outline: 5px darkcyan solid;
+  margin: 70px auto;
+}
+
+.subscribe {
+  width: 1440px;
+  height: 421px;
+  outline: 5px solid wheat;
+  margin: 0 auto;
+}
+
+.page-footer__info-item {
+  display: inline;
+}
+
+.page-footer__contacts {
+  width: 175px;
+  height: 116px;
+  outline: 5px solid saddlebrown;
+}
+
+.page_footer_device {
+  width: 239px;
+  height: 182px;
+  outline: 5px solid whitesmoke;
+}
+.page-footer__info {
+  width: 444px;
+  height: 21px;
+  outline: 5px solid salmon;
+}
+
+.page-footer__info ul li {
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+  width: 150px;
+  height: 40px;
+  outline: 5px solid wheat;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* СТРАНИЦА НОМЕР 2 */
+.search_plus_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1040px;
+  height: 40px;
+  outline: 5px solid greenyellow;
+  margin: 0 auto;
+}
+
+.search_plus_ul ul li {
+  display: inline;
+}
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main-inner__header {
+  width: 1079px;
+  height: 85px;
+  outline: 5px solid red;
+  margin: 0 auto;
+}
+
+.breadcrumbs__item {
+  display: inline;
+}
+
+.main-inner__products {
+  display: flex;
+  width: 1160px;
+  height: 1380px;
+  outline: 5px solid yellowgreen;
+  margin: 0 auto;
+}
+.products__filter-container {
+  width: 320px;
+  height: 1316px;
+  outline: 5px solid fuchsia;
+}
+.products__main-container {
+  width: 840px;
+  height: 1380px;
+  outline: 5px solid black;
+}
+
+.products__sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 840px;
+  height: 70px;
+  outline: 5px solid gray;
+}
+.products__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 840px;
+  height: 1310px;
+  outline: 5px solid teal;
+}
+
+.one_and_two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  width: 760px;
+  height: 452px;
+  outline: 5px solid rgb(0, 140, 255);
+  margin: 44px 0px;
+}
+
+.two_and_three {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  width: 760px;
+  height: 452px;
+  outline: 5px solid rgb(0, 140, 255);
+  margin: 44px 0px;
+}
+
+.product-card {
+  width: 360px;
+  height: 452px;
+  outline: 5px solid orchid;
+  margin: 40px;
+}
+.btn-more {
+width: 760px;
+height: 55px;
+
+}
+
+.products__pagination {
+ width: 760px;
+ height: 71px;
+ outline: 5px solid darkblue;
+ display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+}
