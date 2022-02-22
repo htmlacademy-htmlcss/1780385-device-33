@@ -11,17 +11,17 @@
 
   <header class="page-header">
 
-    <a href="index.html">
+    <a href="index.html" class="page-logo-link">
       <img src="images/header/logo.svg" width="145" height="36" alt="Перейти на главную страницу." class="page-logo">
     </a>
 
-    <div class="yellow-wrapper">
+    <div class="header-yellow-wrapper">
       <div class="header-first-row">
         <div class="search-tandem">
           <label>
             <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on" name="search-input">
           </label>
-          <a href="#" class="search-link">Найти</a>
+          <button class="search-button">Найти</button>
         </div>
 
         <div class="user-tandem">
@@ -51,19 +51,22 @@
         <!-- Раскрывающийся список каталога конец -->
 
         <nav class="header-navigation">
-          <ul class="header-navigation-list">
+          <ul class="header-navigation-list reset-list">
             <li class="header-navigation-item">
-              <a class="header-navigation-link" href="#">Доставка</a>
+              <a class="header-navigation-link" href="#">Контакты</a>
             </li>
             <li class="header-navigation-item">
               <a class="header-navigation-link" href="#">Гарантия</a>
             </li>
             <li class="header-navigation-item">
-              <a class="header-navigation-link" href="#">Контакты</a>
+              <a class="header-navigation-link" href="#">Доставка</a>
             </li>
+
           </ul>
         </nav>
+
       </div>
+
     </div>
 
   </header>
@@ -72,9 +75,9 @@
 
     <header class="catalog-header">
 
-      <h1 class="catalog-main-title">Моноподы для селфи</h1>
+      <h1 class="catalog-main-title reset-margin">Моноподы для селфи</h1>
 
-      <ul class="catalog-breadcrumbs-list">
+      <ul class="catalog-breadcrumbs-list reset-list">
         <li class="catalog-breadcrumbs-item">
           <a href="index.html" class="catalog-breadcrumbs-link">Главная</a>
         </li>
@@ -89,81 +92,83 @@
     </header>
 
     <div class="catalog-main-wrapper">
-      <div class="catalog-filter-column">
-        <h2 class="filter-sorting-header">Фильтр:</h2>
+      <section class="catalog-filter-column">
+        <h2 class="filter-sorting-header reset-margin">Фильтр:</h2>
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Стоимость</legend>
+          <div class="catalog-filter-wrapper">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Стоимость</legend>
+            </fieldset>
+          </div>
+          <div class="catalog-filter-wrapper">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Цвет</legend>
+              <ul class="catalog-filter-list reset-list">
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="black" class="color-checkbox" checked>Черный
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="white" class="color-checkbox" checked>Белый
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="blue" class="color-checkbox" disabled>Синий
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="red" class="color-checkbox" disabled>Красный
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="pink" class="color-checkbox" disabled>Розовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          </fieldset>
-
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Цвет</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="black" class="color-checkbox" checked>Черный
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="white" class="color-checkbox" checked>Белый
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="blue" class="color-checkbox" disabled>Синий
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="red" class="color-checkbox" disabled>Красный
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="pink" class="color-checkbox" disabled>Розовый
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Bluetooth</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="radio" name="radio-bluetooth" class="color-checkbox" checked value="yes">Есть
-                </label>
-              </li>
-            </ul>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="radio" name="radio-bluetooth" class="color-checkbox" value="no">Нет
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
+          <div class="catalog-filter-wrapper">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Bluetooth</legend>
+              <ul class="catalog-filter-list reset-list">
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="radio" name="radio-bluetooth" class="color-checkbox" checked value="yes">Есть
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="radio" name="radio-bluetooth" class="color-checkbox" value="no">Нет
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <button class="button-yellow-line" type="submit">Показать</button>
 
         </form>
-      </div>
+      </section>
 
-      <div class="catalog-right-column">
+      <section class="catalog-right-column">
 
         <div class="sorting-mini-wrapper">
-          <h2 class="sorting-header-word">
-            Сортировка:
+          <h2 class="visually-hidden">
+            Карточки товаров и их сортировка
           </h2>
-          <label class="visually-hidden sorting-options-select">Выбрать опцию сортировки
-            <select class="sorting-select">
-              <option value="popular">Популярные</option>
-            </select>
+          <label class="sorting-header-word" for="sorting-select">
+            Сортировка:
           </label>
+          <select class="sorting-select" id="sorting-select">
+            <option value="popular">Популярные</option>
+          </select>
           <div class="up-down-buttons-wrapper">
             <button class="up-down-sorting" type="button" aria-label="По возрастанию">
             </button>
@@ -174,20 +179,18 @@
 
         <!-- Карточки товаров Начало -->
         <section class="product-list-section">
-          <ul class="product-list">
+          <ul class="product-list reset-list">
             <li class="product-item">
               <a href="#" class="product-link">
-                <img src="images/catalog-page/products/product(1).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(1).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
-                <h3 class="product-title">
+                <h3 class="product-title reset-margin">
                   Любительская<br>
                   селфи-палка
                 </h3>
-                <span class="product-price">500
-                  <span> &#8381;</span>
-                </span>
+                <span class="product-price">500 &#8381;</span>
               </div>
               <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
             </li>
@@ -195,17 +198,15 @@
             <li class="product-item">
               <a href="#" class="product-link">
 
-                <img src="images/catalog-page/products/product(2).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(2).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
-                <h3 class="product-title">
+                <h3 class="product-title reset-margin">
                   Профессиональная<br>
                   селфи-палка
                 </h3>
-                <span class="product-price">1500
-                  <span> &#8381;</span>
-                </span>
+                <span class="product-price">1500 &#8381;</span>
               </div>
               <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
             </li>
@@ -213,17 +214,15 @@
             <li class="product-item">
               <a href="#" class="product-link">
 
-                <img src="images/catalog-page/products/product(3).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(3).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
-                <h3 class="product-title">
+                <h3 class="product-title reset-margin">
                   Непотопляемая<br>
                   селфи-палка
                 </h3>
-                <span class="product-price">2500
-                  <span> &#8381;</span>
-                </span>
+                <span class="product-price">2500 &#8381;</span>
               </div>
               <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
             </li>
@@ -231,17 +230,15 @@
             <li class="product-item">
               <a href="#" class="product-link">
 
-                <img src="images/catalog-page/products/product(4).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(4).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
-                <h3 class="product-title">
+                <h3 class="product-title reset-margin">
                   Селфи-палка «Следуй за<br>
                   мной»
                 </h3>
-                <span class="product-price">1500
-                  <span> &#8381;</span>
-                </span>
+                <span class="product-price">1500 &#8381;</span>
               </div>
               <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
             </li>
@@ -252,52 +249,54 @@
             Загрузить ещё
           </button>
 
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-prev pagination-prev-next" href="#">
-                Назад
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">15</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-next  pagination-prev-next" href="#">
-                Вперед
-              </a>
-            </li>
-          </ul>
+          <div class="pagination">
+            <a class="pagination-prev pagination-prev-next" href="#">
+              Назад
+            </a>
+
+            <ul class="pagination-list reset-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </ul>
+
+            <a class="pagination-next  pagination-prev-next" href="#">
+              Вперед
+            </a>
+          </div>
         </section>
-      </div>
+      </section>
     </div>
 
   </main>
 
   <footer class="page-footer">
 
-    <img src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
+    <img src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип магазина Девайс."
+      class="footer-device-logo">
 
     <div class="footer-first-row">
       <address class="footer-address">
-        <p class="footer-direction">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        <p class="footer-direction  reset-margin">
+          Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.
         </p>
       </address>
 
       <nav class="footer-navigation">
-        <ul class="footer-navigation-list">
+        <ul class="footer-navigation-list reset-list">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link" href="#">Доставка</a>
           </li>
@@ -320,20 +319,20 @@
 
       <section class="social-networks-section">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-networks-list">
+        <ul class="social-networks-list reset-list">
           <li class="social-networks-item">
             <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link">
-              Фусбук
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-networks-item">
             <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link">
-              Инстаграм
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-networks-item">
             <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link">
-              Твиттер
+              <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
